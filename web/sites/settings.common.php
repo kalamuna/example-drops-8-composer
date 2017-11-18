@@ -8,9 +8,9 @@
  * @see https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
  */
 
-// Include a hosting provider-specific settings file here (Pantheon, Acquia,
-// etc.). Refer to the provider's documentation or canonical upstream (e.g.,
-// Pantheon's "drops8" repository) for sample code.
+// Include the Pantheon-provided settings file here. It gets downloaded
+// automagically by composer and thus is ignored by the VCS.
+include "$app_root/sites/default/settings.pantheon.php";
 
 // Determine the environment; one of "dev", "test", or "live".
 // E.g., for Pantheon, use "dev" settings on all sites except TEST and LIVE:
